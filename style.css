@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap');
+body{
+    margin: 0 auto;
+    padding: 0px;   font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.innbody{
+    background-color: #54c3ef;
+}
+.innbody #grid-wrap-width {
+   padding: 4% 14%;
+}
+#grid-wrap-width{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 8%;
+}
+.vedimg{ width: 100%;}
+.card{
+    margin: 16px; 
+    background-color: #fff; 
+    width: calc( 33.33% - 32px); 
+    border-radius: 6px; 
+    box-shadow: 2px 2px 4px #ccc; display: inline-block;
+}
+.card img{
+    width: 100%; border-radius: 6px 6px 0px 0px;
+}
+.card h1{ margin: 0px; padding: 20px; font-size: 14px;}
+.bannerimg img{width: 100%;}
+#detailimgwrap{ width: 70%;}
+.thumbimgwrap{width: 30%;}
+.thumbimgwrap .card{ width: auto;}
+.bg_whit{ background-color: #fff;display: flex;
+    flex-wrap: wrap;}
+    .viewcount{ padding:20px 20px 0px;}
+    .h1font{ padding:0px 20px 10px;}
+    .descrtxt{ padding: 0px 20px;}
