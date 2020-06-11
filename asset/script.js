@@ -24,10 +24,34 @@ xhhtpdetail.onreadystatechange = function(){
     var viewswrap = document.createElement('div')
    viewswrap.classList.add('viewcount')
    var viewsno = document.createElement('div')
-   viewsno = detailresponseArr.views
-   viewswrap.append(viewsno)
+   viewsno.classList.add('bord')
+   viewsno = detailresponseArr.views + "view"
+   
    var viewsicon = document.createElement('div')
    viewsicon.classList.add('iconalin')
+   var alink1 = document.createElement('a')
+   alink1.classList.add("faicon");
+    var faicon = document.createElement("i");
+    faicon.classList.add("far", "fa-heart");
+    alink1.appendChild(faicon);
+    viewsicon.append(alink1)
+
+    var alink2 = document.createElement('a')
+   alink2.classList.add("faicon");
+    var faicon1 = document.createElement("i");
+    faicon1.classList.add("far", "fa-comment-alt");
+    alink2.appendChild(faicon1);
+   //alink1.appendChild = ('<i class="far fa-heart"></i>')
+   viewsicon.append(alink2)
+
+   var alink3 = document.createElement('a')
+   alink3.classList.add("faicon2");
+    var faicon2 = document.createElement("i"); 
+    faicon2.classList.add("far", "fa-bookmark");
+    alink3.appendChild(faicon2);
+   //alink1.appendChild = ('<i class="far fa-heart"></i>')
+   viewsicon.append(alink3)
+   viewswrap.append(viewsno)
    viewswrap.append(viewsicon)
    maindetailpage.append(viewswrap)
 
